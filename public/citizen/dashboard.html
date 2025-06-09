@@ -6,6 +6,11 @@
     <title>Citizen Dashboard - Disaster Management System</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -77,24 +82,7 @@
             padding: 20px;
         }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .user-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .user-info img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
+        
 
         .logout-btn {
             background: #ff4242;
@@ -172,7 +160,7 @@
             font-size: 0.9rem;
         }
 
-        /* Activity Feed */
+        /* Activity Feed
         .activity-feed {
             background: white;
             padding: 20px;
@@ -246,7 +234,7 @@
         .status-resolved {
             background: #d4edda;
             color: #155724;
-        }
+        } */
 
         /* Modal Styles */
         .modal {
@@ -332,24 +320,20 @@
                 <i class="fas fa-ticket-alt"></i>
                 My Tickets
             </a>
-            <a href="#">
-                <i class="fas fa-map-marked-alt"></i>
-                Evacuation Routes
-            </a>
-            <a href="#">
-                <i class="fas fa-info-circle"></i>
-                Emergency Info
+            <a href="../index.html" class="menu-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="menu-text">Logout</span>
             </a>
         </div>
     </div>
 
     <!-- Main Content -->
     <div class="main-content">
-        <div class="header">
+        <!-- <div class="header">
             <div class="user-info">
                 <img src="https://via.placeholder.com/40" alt="User">
                 <span id="user-name">Guest</span>
-            </div>
+            </div> -->
             <button class="logout-btn" id="logout-btn" style="display: none;">
                 <i class="fas fa-sign-out-alt"></i>
                 Logout
@@ -385,19 +369,20 @@
             </div>
         </div>
 
-        <!-- Activity Feed -->
+        <!-- Activity Feed
         <div class="activity-feed">
             <h2>Recent Activity</h2>
             <div id="activity-feed">
                 <!-- Activity items will be loaded here -->
             </div>
-        </div>
+        </div> -->
     </div>
+    
 
     <!-- SOS Button -->
-    <div class="sos-button" onclick="showSOSModal()">
+    <button class="sos-button" data-toggle="tooltip" title="Click to send an SOS alert!" onclick="showSOSModal()">
         <i class="fas fa-exclamation-triangle"></i>
-    </div>
+    </button>
 
     <!-- Help Request Modal -->
     <div id="help-modal" class="modal">
@@ -445,6 +430,30 @@
             </form>
         </div>
     </div>
+
+    <!-- Guidance Modal -->
+    <div id="guidance-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to Report an Emergency</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>To report an emergency, please fill out the form with your details and click "Submit Request".</p>
+                    <p>Make sure to provide accurate information for a quicker response.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script src="charts.js"></script>
 
     <script>
         // Initialize dashboard

@@ -25,3 +25,12 @@ async function loadPoliceStations() {
 
 // Call the function to load police stations when the resources tab is clicked
 document.getElementById('resources-tab').addEventListener('click', loadPoliceStations);
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+// Show guidance modal on page load
+$(document).ready(function() {
+    $('#guidance-modal').modal('show');
+});
