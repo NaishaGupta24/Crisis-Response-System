@@ -20,40 +20,52 @@ The Smart Crisis Response System is a web application designed to assist citizen
 - **Libraries**: [MySQL2](https://www.npmjs.com/package/mysql2), [Express](https://expressjs.com/)
 
   ## Output Screenshots
-  1. Home Page
+#  1. Home Page
+
   ![Home Page](https://github.com/user-attachments/assets/4845198b-89e6-4cc1-ac9f-488700d87496)
 
-  2. Citizen Dashboard Page
+#  2. Citizen Dashboard Page
+
   ![Citizen Dashboard](https://github.com/user-attachments/assets/5d532d74-28e5-42d6-8cae-93d33a3bb441)
 
-  3. Citizen Help Request Form
+#  3. Citizen Help Request Form
+
   ![Help Form](https://github.com/user-attachments/assets/5fc3c0fd-afe3-4bc3-b00c-ca6905ff0cf7)
 
-  4. Citizen Emergency SOS
+#  4. Citizen Emergency SOS
+
   ![Citizen Emergency SOS](https://github.com/user-attachments/assets/042f7e22-186e-4184-87c3-afd4ad2c6692)
 
-  5. Citizen Tickets Page
+#  5. Citizen Tickets Page
+
   ![Citizen Tickets](https://github.com/user-attachments/assets/db1d963b-caf5-40ef-ab98-b54ddafa417c)
 
-  6. Official Login/Signup Page
+#  6. Official Login/Signup Page
+
   ![Official Login_Signup](https://github.com/user-attachments/assets/b299695d-a544-4a60-b9fb-5f7fafae78e9)
 
-  7. Official Dashboard Page
+#  7. Official Dashboard Page
+
   ![Official Dashboard](https://github.com/user-attachments/assets/ce778946-42d9-43d4-bc46-aa8894073406)
 
-  8. Official All Tickets Page
+#  8. Official All Tickets Page
+
   ![All Tickets](https://github.com/user-attachments/assets/ddb9136f-0cdc-43cd-9fe4-60e5bff947f4)
 
-  9. Official Inventory Management Page
+#  9. Official Inventory Management Page
+
   ![Inventory Management](https://github.com/user-attachments/assets/09f37c08-9bea-4ec5-b854-71e5d41babec)
 
-  10. Official Data Page
+#  10. Official Data Page
+
   ![Officials Data](https://github.com/user-attachments/assets/9f0961cb-8e3f-4dee-8f63-1417c3aca19f)
 
-  11. Official Team Analysis Report Page
+#  11. Official Team Analysis Report Page
+
   ![Reports for Analysis](https://github.com/user-attachments/assets/ae5a5e79-8ddd-4027-9bf7-97c19ca767fb)
 
-  12. Official Account Settings Page
+#  12. Official Account Settings Page
+
   ![Settings](https://github.com/user-attachments/assets/b5b90a7e-3e61-450d-9dfd-df658dc83107)
 
 
