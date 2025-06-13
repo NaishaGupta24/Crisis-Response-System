@@ -1,8 +1,8 @@
-# Disaster Management System
+# Smart Crisis Response System
 
 ## Overview
 
-The Disaster Management System is a web application designed to assist citizens and government officials in managing disaster-related information and resources. The application provides functionalities for reporting emergencies, accessing police and fire station information, and tracking submitted tickets.
+The Smart Crisis Response System is a web application designed to assist citizens and government officials in managing disaster-related information and resources. The application provides functionalities for reporting emergencies, accessing police and fire station information, and tracking submitted tickets.
 
 ## Features
 
