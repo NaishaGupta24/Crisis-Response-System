@@ -19,6 +19,11 @@ The Smart Crisis Response System is a web application designed to assist citizen
 - **Database**: MySQL
 - **Libraries**: [MySQL2](https://www.npmjs.com/package/mysql2), [Express](https://expressjs.com/)
 
+  ## Output Screenshots
+  1. Home Page
+  ![Home Page](https://github.com/user-attachments/assets/4845198b-89e6-4cc1-ac9f-488700d87496)
+
+
 ## Installation
 
 To set up the project locally, follow these steps:
